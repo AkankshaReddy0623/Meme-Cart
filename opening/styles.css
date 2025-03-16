@@ -1,0 +1,97 @@
+/* Global Styling */
+body {
+    background-color: yellow;
+    color: green;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: hotpink;
+    text-shadow: 3px 3px 5px black;
+    animation: random-move 2s infinite alternate;
+  }
+  
+  button {
+    font-size: 2rem;
+    padding: 15px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px;
+    transition: transform 0.5s ease;
+  }
+  
+  button:hover {
+    transform: rotate(360deg);
+    background-color: red;
+  }
+  
+  .useless-button {
+    background-color: limegreen;
+    border: 3px solid red;
+    font-size: 3rem;
+    padding: 20px;
+    color: white;
+    margin: 10px;
+    animation: random-color 0.5s infinite alternate;
+  }
+  
+  .nonsense {
+    font-size: 3rem;
+    color: blue;
+    text-transform: uppercase;
+    animation: flash 1s infinite;
+  }
+  
+  .random-text {
+    animation: random-move 4s infinite;
+  }
+  
+  .confusing-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  footer {
+    background-color: lime;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .flashing-text {
+    font-size: 3rem;
+    color: red;
+    animation: flashing-text 0.3s infinite alternate;
+  }
+  
+  /* Flashing text animation */
+  @keyframes flashing-text {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: green; }
+  }
+  
+  /* Random movement for random elements */
+  @keyframes random-move {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100px, -50px); }
+    50% { transform: translate(-100px, 50px); }
+    75% { transform: translate(50px, -100px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  /* Random color animation */
+  @keyframes random-color {
+    0% { background-color: limegreen; }
+    50% { background-color: orange; }
+    100% { background-color: hotpink; }
+  }
